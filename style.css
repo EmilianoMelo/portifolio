@@ -1,0 +1,403 @@
+nav ul{
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  opacity: 0.8;
+
+  
+}
+nav li{
+  display: inline-block;
+  margin-right: 130px;
+  margin-left: 0px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 60px;
+  height: 60px;
+  border-bottom: 0px solid #888;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 1s background-color;
+}
+
+nav a:hover{
+  background-color: #555;
+  color: black;
+} 
+
+nav a:focus{
+  background-color: #fff;
+  color: #444;
+  cursor: default; 
+}
+
+h1{
+  position: absolute;
+  font-size: 38px;
+  letter-spacing: 1px;
+  color: white;
+  top: 10%;
+  left: 5%;
+  font-family:'Contrail One', cursive;
+  font-weight: 100;
+  z-index: 999;
+
+}
+
+h2{
+  position: absolute;
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: white;
+  top: 10%;
+  left: 5%;
+  font-family:'Contrail One', cursive;
+  font-weight: 100;
+  z-index: 999;
+}
+
+h3{
+  font-family:'Monofett', cursive;
+  color: #fff;
+  font-size: 90px;
+  letter-spacing: 5px;
+  height: 1%;
+  font-weight: bolder;
+}
+
+h4{
+  border: solid 0px;
+  padding: 0px;
+  font-family:'Contrail One', cursive;
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 12px;
+  /*height: 100px;*/
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bkg{
+  animation: home 8s linear/*tempo transição*/0s/*tempoDelay*/normal/*ordem da animaçao*/ infinite/*duração*/; 
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bkg2{
+  background-image: url("bk2.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+}
+
+.bkg3{
+  background-image: url("bk4.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+}
+
+.bkg4{
+  background-image: url("bk6.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+}
+
+
+.logo {
+
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 65%;
+  height: 50%;
+  padding: 0px;
+  text-align: center;
+  
+}
+
+
+
+.p1{
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  position: absolute;
+  top:23%;
+  left: 8%;
+  width: 35%;
+  height: 70%;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Inconsolata', monospace;
+  padding: 17px;
+  border: 3px solid #f1f1f1;
+ 
+}
+
+.anima{
+  animation: transitions 4s linear 0s normal/*ordem da animaçao*/ infinite/*duração*/; 
+  position: absolute;
+  top:33%;
+  right: 8%;
+  width: 33%;
+  height: 60%;
+}
+
+.anima2{
+  animation: transition 4s linear/*tempo transição*/0s/*tempoDelay*/normal/*ordem da animaçao*/ infinite/*duração*/; 
+  position: absolute;
+  top:23%;
+  right: 15%;
+  width: 33%;
+  height: 60%;
+}
+
+.img1{
+  position: absolute;
+  top:160px;
+  right: 155px;
+  width: 450px;
+  height: 400px;
+}
+
+.img2{
+  position: absolute;
+  top:195px;
+  right: 120px;
+  width: 450px;
+  height: 400px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* cont. de imagens seta esq dir */
+.container {
+  position: absolute;
+  width: 33.8%;
+  right: 8%;
+  top: 26%;
+
+}
+
+
+/* Ocultar as imagens por padrão */
+.mySlides {
+  display: none;
+  width:100%;
+
+}
+
+/* Adicione um ponteiro ao passar o mouse sobre as imagens em miniatura */
+.cursor {
+  cursor: pointer;
+}
+
+/* botao anterior */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* botao proximo */
+.next {
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*numero do texto */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* container de imagem */
+.caption-container {
+  text-align: center;
+  background-color: #444;
+  padding: 5px;
+  color: white;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  width:100%;
+
+}
+
+/* colunas miniaturas */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* efeito transparencia */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*transition*/
+@keyframes transition{
+  from{
+    background-image: url("dese.jpeg");
+  }
+  to{
+    background-image: url("about.jpg");
+    }
+}
+
+@keyframes transitions{
+  from{
+    background-image: url("about.jpg");
+  }
+  to{
+    background-image: url("dese.jpeg");
+    }
+}
+
+@keyframes home{
+  0%{
+    background-image: url("bk1.jpg");
+  }
+  35%{
+    background-image: url("bk2.jpg");
+    }
+  70%{
+    background-image: url("bk4.jpg");
+    }
+  100%{
+    background-image: url("bk6.jpg");
+  }
+}
+
+.borda{
+  border:gray solid 3px;
+}
+
+.card {
+  position: absolute;
+  position: absolute;
+  top:25%;
+  right: 18%;
+  width: 33%;
+  height: 65%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: black;
+  font-size: 28px;
+}
+
+.inst {
+  color: black;
+  font-size: 24px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
